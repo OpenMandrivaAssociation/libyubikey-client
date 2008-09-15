@@ -4,7 +4,7 @@
 
 Summary:	Implements online validation of Yubikey OTPs
 Name:		libyubikey-client
-Version:	1.2
+Version:	1.3
 Release:	%mkrel 1
 Group:		System/Libraries
 License:	BSD
@@ -74,7 +74,6 @@ rm -rf %{buildroot}
 %makeinstall_std
 
 # nuke rpath
-
 chrpath -d %{buildroot}%{_bindir}/ykclient
 
 %if %mdkversion < 200900
@@ -102,4 +101,3 @@ rm -rf %{buildroot}
 %files -n ykclient
 %defattr(-,root,root)
 %{_bindir}/ykclient
-
