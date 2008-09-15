@@ -4,13 +4,14 @@
 
 Summary:	Implements online validation of Yubikey OTPs
 Name:		libyubikey-client
-Version:	1.3
-Release:	%mkrel 1
+Version:	1.2
+Release:	%mkrel 2
 Group:		System/Libraries
 License:	BSD
 URL:		http://code.google.com/p/yubico-c-client/
 Source0:	http://yubico-c-client.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		libyubikey-client-1.2-autofoo_fixes.diff
+Patch1:		libyubikey-client-svn_fixes.diff
 BuildRequires:	autoconf
 BuildRequires:	chrpath
 BuildRequires:	curl-devel
@@ -55,6 +56,7 @@ online server.
 
 %setup -q -n %{name}-%{version}
 %patch0 -p1
+%patch1 -p0
 
 %build
 sh ./autogen.sh
