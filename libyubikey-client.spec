@@ -4,7 +4,7 @@
 
 Summary:	Implements online validation of Yubikey OTPs
 Name:		libyubikey-client
-Version:	1.4
+Version:	1.5
 Release:	%mkrel 1
 Group:		System/Libraries
 License:	BSD
