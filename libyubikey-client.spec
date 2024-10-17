@@ -8,7 +8,7 @@ Version:	1.5
 Release:	%mkrel 5
 Group:		System/Libraries
 License:	BSD
-URL:		http://code.google.com/p/yubico-c-client/
+URL:		https://code.google.com/p/yubico-c-client/
 Source0:	http://yubico-c-client.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	chrpath
