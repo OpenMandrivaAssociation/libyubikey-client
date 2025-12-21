@@ -10,6 +10,10 @@ Group:		System/Libraries
 License:	BSD
 URL:		https://code.google.com/p/yubico-c-client/
 Source0:	http://yubico-c-client.googlecode.com/files/%{name}-%{version}.tar.gz
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	autoconf
 BuildRequires:	chrpath
 BuildRequires:	curl-devel
