@@ -5,7 +5,7 @@
 Summary:	Implements online validation of Yubikey OTPs
 Name:		libyubikey-client
 Version:	1.5
-Release:	%mkrel 5
+Release:	6
 Group:		System/Libraries
 License:	BSD
 URL:		https://code.google.com/p/yubico-c-client/
